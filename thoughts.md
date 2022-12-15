@@ -52,3 +52,13 @@ OOP attempt
   - Turn into an integer
 - Rucksacks have an inventory list associated with each. So a rucksack should be able to identify the duplicate
 - An elf should be responsible for calculating the priority value total.
+
+## After successful first solution problem 1
+My initial plan came across a few snags. 
+- I did not account for using a Character object instead of a String object in the initial
+plan. This was a minor problem. Did not affect overall approach.
+- When implementing I found myself wanting to pass the result of a method call for another method call. I did not plan
+out the classes and I found having to second guess what data went where.
+
+This solution is very rigid. Expects a specific file with a specific input. Classes are tied together. I should 
+into generics.
