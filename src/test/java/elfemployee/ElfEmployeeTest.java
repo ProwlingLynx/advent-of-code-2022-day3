@@ -13,4 +13,12 @@ class ElfEmployeeTest {
         int actual = elf.calculateTotalPriorityValue();
         assertEquals(expected, actual);
     }
+
+    @Test
+    void calculateElfBadgePriorityValue() {
+        int expected = 70;
+        ElfEmployee elf = new ElfEmployee("src/main/resources/teamSampleInput.txt");
+        int actual = elf.calculateElfBadgePriorityValue();
+        assertEquals(expected, actual);
+    }
 }
