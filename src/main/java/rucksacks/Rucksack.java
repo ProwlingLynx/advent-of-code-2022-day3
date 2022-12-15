@@ -30,4 +30,15 @@ public class Rucksack implements IRucksack{
     public Character getDuplicateType(){
         return duplicateType;
     }
+    @Override
+    public HashSet<Character> getHashSetOfContent(){
+        HashSet<Character> hashedContents = new HashSet<>();
+        for (int i = 0; i < compartment1.length(); i++){
+            hashedContents.add(compartment1.charAt(i));
+        }
+        for (int i = 0; i < compartment2.length(); i++){
+            hashedContents.add(compartment2.charAt(i));
+        }
+        return hashedContents;
+    }
 }
