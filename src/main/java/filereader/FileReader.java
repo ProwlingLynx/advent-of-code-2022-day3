@@ -12,7 +12,7 @@ public class FileReader {
         sc = new Scanner(file);
     }
 
-    List<String> readListOfRucksackContents() {
+    public List<String> readListOfRucksackContents() {
         List<String> rucksackContents = new ArrayList<>();
         while (sc.hasNext()){
             rucksackContents.add(sc.nextLine());
